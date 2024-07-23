@@ -1,7 +1,12 @@
 package throwex;
 
 public class Age extends Exception {
-	Age(String )
+	 
+		Age(String str) {
+			System.out.println(str);
+		}
+
+
 	
 
 }
