@@ -1,4 +1,4 @@
-package finallyblock;
+package com.tnsif.finallyblock;
 
 public class Test {
 	public static void main(String[] args) {

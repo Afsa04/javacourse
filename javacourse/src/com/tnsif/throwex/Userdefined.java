@@ -1,4 +1,4 @@
-package throwex;
+package com.tnsif.throwex;
 
 import java.util.Scanner;
 
