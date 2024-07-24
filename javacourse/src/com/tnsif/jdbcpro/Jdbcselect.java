@@ -11,13 +11,13 @@ public class Jdbcselect {
 		
 		 
 		try {
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hyd11","root","root");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/sriindu","root","afsa@1234@");
 			
  			
 			Statement st=conn.createStatement();
 			
 			 
-			String strselect="select booktitle,price,qty from books";
+			String strselect="select booktitle,bookprize,qty from book";
 			
 			System.out.println("the sql stament is"+strselect);
 			
@@ -28,10 +28,10 @@ public class Jdbcselect {
 			int rowcout=0;
 			while(rst.next()) {
 				String booktitle=rst.getString("booktitle");
-				int price=rst.getInt("price");
+				int bookprize=rst.getInt("bookprize");
 				int qty=rst.getInt("qty");
 				
-				System.out.println(booktitle+" "+price+" "+qty);
+				System.out.println(booktitle+" "+bookprize+" "+qty);
 				++rowcout;
 			}
 			}
